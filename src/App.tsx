@@ -1,5 +1,5 @@
 import 'tailwindcss/tailwind.css';
-import {Button, Card, Spacer} from '@geist-ui/core';
+import {Button, Card} from '@geist-ui/core';
 import {HeartFill, Github, Layers} from '@geist-ui/icons';
 import logoUrl from './assets/logo.png';
 import './App.css';
@@ -45,7 +45,6 @@ function App() {
               }
             }}
             icon={<HeartFill />}>
-            <Spacer w={1} />
             Sponsor Us!
           </Button>
         </div>
