@@ -10,7 +10,9 @@ function App() {
       <nav className="flex items-center justify-between p-4">
         <div className="flex items-center space-x-4">
           <img src={logoUrl} alt="Rock Hacks" className="h-8 w-8" />
-          <span className="font-bold">Rock Hacks</span>
+          <span className="font-bold bg-gradient-to-t from-orange-600 to-red-800 inline-block text-transparent bg-clip-text">
+            Rock Hacks
+          </span>
         </div>
         <div className="flex items-center space-x-4">
           <a className="text-white" href="#">
@@ -39,20 +41,25 @@ function App() {
             onPointerEnterCapture={undefined}
             onPointerLeaveCapture={undefined}
             onClick={() => {
-              const sponsor = document.getElementById('sponsor');
-              if (sponsor) {
-                sponsor.scrollIntoView({behavior: 'smooth'});
-              }
+              // const sponsor = document.getElementById('sponsor');
+              // if (sponsor) {
+              //   sponsor.scrollIntoView({behavior: 'smooth'});
+              // }
+              // open link
+              window.open('https://hcb.hackclub.com/donations/start/rock-hacks', '_blank');
             }}
             icon={<HeartFill />}>
-            Sponsor Us!
+            Support Us!
           </Button>
         </div>
       </nav>
       <header className="flex flex-col items-center justify-center py-24">
-        <h1 className="text-6xl font-bold">Rock Hacks</h1>
+        <h1 className="text-6xl font-bold bg-gradient-to-t from-orange-600 to-red-800 inline-block text-transparent bg-clip-text">
+          Rock Hacks
+        </h1>
         <p className="mt-4 text-xl text-center">
-          Rock Hacks is a hackathon that blah blah blah yeah we're the best trust
+          Rock Hacks is a high school hackathon backed by Hack Club, where participants can attend to learn, build, and
+          have fun.
         </p>
       </header>
       <section className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
@@ -96,8 +103,17 @@ function App() {
       </section>
       <hr className="border-t border-gray-600 my-10" />
       <section className="p-4" id="sponsor">
-        <h2 className="text-2xl font-bold">Sponsor Us</h2>
+        <h2 className="text-2xl font-bold">Support Our Mission</h2>
         <p className="mt-4 text-lg text-gray-400">pls we need moneys</p>
+        <div className="flex justify-center items-center">
+          <iframe
+            src="https://hcb.hackclub.com/donations/start/rock-hacks"
+            name="donateFrame"
+            height="816px"
+            width="512px"
+            allowFullScreen
+          />
+        </div>
       </section>
       <hr className="border-t border-gray-600 my-10" />
       <section className="p-4" id="sponsor">
