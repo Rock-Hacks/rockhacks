@@ -72,6 +72,10 @@ function App() {
           <h3 className="mt-2 font-semibold">and uhh</h3>
           <p className="mt-1 text-sm text-gray-600">more stuff here</p>
         </Card>
+        <Card className="w-full" type="dark">
+          <h3 className="mt-2 font-semibold">Finally</h3>
+          <p className="mt-1 text-sm text-gray-600">more confusion</p>
+        </Card>
       </section>
       <hr className="border-t border-gray-600 my-10" />
       <section className="p-4">
