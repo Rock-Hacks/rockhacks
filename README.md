@@ -2,6 +2,9 @@
 
 [https://rockhacks.dev/](https://sjalkote.github.io/rockhacks/)
 
+An information + signup website aimed to be fast and lightweight whilst still appearing 
+aesthetically pleasing and optimized for mobile use.
+
 ## 📚 About
 
 This is the Git repository for the Rock Hacks website.
@@ -14,3 +17,6 @@ cd rockhacks
 npm install
 npm run dev
 ```
+
+## 📦 Dependencies
+Minimal dependencies, built with Vite + React and utilizes Tailwind CSS + Geist UI for styling.
